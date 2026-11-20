@@ -1,0 +1,30 @@
+name: DiceGems
+version: '1.0.0'
+main: dev.dicegems.DiceGems
+api-version: '1.21'
+description: Roll a dice when you join - the number you roll decides your gem.
+author: you
+
+commands:
+  roll:
+    description: Roll the gem dice for yourself, a player, or everyone (@a)
+    usage: /<command> [player|@a|@s] [max]
+    permission: dicegems.roll
+  dicegems:
+    description: Gem info, ranking, trust and admin tools
+    usage: /<command> [list|info|give|trust|clearcd|reload]
+    aliases: [dgems, gems]
+
+permissions:
+  dicegems.use:
+    description: Use gem abilities
+    default: true
+  dicegems.roll:
+    description: Use /roll on yourself
+    default: op
+  dicegems.roll.others:
+    description: Use /roll on other players and @a
+    default: op
+  dicegems.admin:
+    description: Give gems, clear cooldowns, reload
+    default: op

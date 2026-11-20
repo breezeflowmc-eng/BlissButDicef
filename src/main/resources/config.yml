@@ -1,0 +1,19 @@
+# ==========================================
+# DiceGems configuration
+# ==========================================
+dice:
+  # Highest number on the dice when nobody specifies one.
+  # 0 = the number of gems, so the number you roll IS your gem's rank.
+  default-max: 0
+  # Largest number /roll will accept
+  max-allowed: 100000
+  # false = roll only the first time a player joins (they keep the gem after that)
+  # true  = everyone re-rolls every time they join
+  roll-every-join: false
+  # Ticks to wait after joining before the dice appears (20 = 1 second)
+  join-delay-ticks: 30
+  # Announce every result in chat
+  broadcast-results: true
+
+# Multiply every ability cooldown (0.5 = half as long, 2 = twice as long)
+cooldown-multiplier: 1.0
